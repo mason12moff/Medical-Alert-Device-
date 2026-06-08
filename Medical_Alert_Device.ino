@@ -4,20 +4,20 @@
 #include <WiFiClientSecure.h>
 
 // Wi-Fi Settings
-const char* ssid = "commune";
-const char* password = "automatic";
+const char* ssid = "xxxxxxx";
+const char* password = "xxxxxxxxx";
 
 #define TELEGRAM_BUTTON_PIN D7
 
 // Telegram config
-#define BOT_TOKEN "7069156211:AAGNESFQLadkxY_Y0RTJwrMJmbnEGPliOG4"
-#define CHAT_ID "6974906607"
+#define BOT_TOKEN "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+#define CHAT_ID "xxxxxxxxxx"
 
 // SSL client
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOT_TOKEN, client);
 
-String ipAddress = "192.168.1.72";
+String ipAddress = "xxxxxxxxxxxxxxxx";
 volatile bool telegramButtonPressedFlag = false;
 
 ICACHE_RAM_ATTR void telegramButtonPressed() {
